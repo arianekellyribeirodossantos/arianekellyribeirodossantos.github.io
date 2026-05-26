@@ -1,0 +1,44 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff"/>
+      <stop offset="100%" stop-color="#00d4aa"/>
+    </linearGradient>
+    <linearGradient id="gbg" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00d4aa" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#6c63ff" stop-opacity="0.06"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo preto -->
+  <rect width="500" height="500" fill="#08090f" rx="80"/>
+
+  <!-- Hexágono externo preenchido -->
+  <polygon points="250,45 430,150 430,350 250,455 70,350 70,150" fill="url(#gbg)"/>
+  <!-- Hexágono externo borda -->
+  <polygon points="250,45 430,150 430,350 250,455 70,350 70,150" fill="none" stroke="url(#g)" stroke-width="10"/>
+
+  <!-- Hexágono interno tracejado -->
+  <polygon points="250,95 380,168 380,332 250,405 120,332 120,168" fill="none" stroke="url(#g)" stroke-width="3" opacity="0.2" stroke-dasharray="12,8"/>
+
+  <!-- Nós nos vértices -->
+  <circle cx="250" cy="45"  r="14" fill="url(#g)"/>
+  <circle cx="430" cy="150" r="14" fill="url(#g)"/>
+  <circle cx="430" cy="350" r="14" fill="url(#g)"/>
+  <circle cx="250" cy="455" r="14" fill="url(#g)"/>
+  <circle cx="70"  cy="350" r="14" fill="url(#g)"/>
+  <circle cx="70"  cy="150" r="14" fill="url(#g)"/>
+
+  <!-- Letra A geométrica -->
+  <line x1="178" y1="320" x2="214" y2="180" stroke="url(#g)" stroke-width="22" stroke-linecap="round"/>
+  <line x1="214" y1="180" x2="250" y2="320" stroke="url(#g)" stroke-width="22" stroke-linecap="round"/>
+  <line x1="190" y1="272" x2="238" y2="272" stroke="url(#g)" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Letra K geométrica -->
+  <line x1="272" y1="180" x2="272" y2="320" stroke="url(#g)" stroke-width="22" stroke-linecap="round"/>
+  <line x1="272" y1="250" x2="322" y2="180" stroke="url(#g)" stroke-width="18" stroke-linecap="round"/>
+  <line x1="272" y1="250" x2="322" y2="320" stroke="url(#g)" stroke-width="18" stroke-linecap="round"/>
+
+  <!-- Ponto de conexão no K -->
+  <circle cx="272" cy="250" r="16" fill="url(#g)"/>
+</svg>
